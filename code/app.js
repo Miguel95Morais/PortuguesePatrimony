@@ -8,6 +8,7 @@ var usersRouter = require('./routes/users');
 var utilizadorRouter = require('./routes/utilizadorRoutes');
 var monumentoRouter = require('./routes/monumentoRoutes');
 var reservaRouter = require('./routes/reservaRoutes');
+var guiaRouter = require('./routes/guiaRoutes');
 
 var app = express();
 
@@ -23,5 +24,6 @@ app.use('/users', usersRouter);
 app.use('/utilizadores', utilizadorRouter);
 app.use('/monumentos', monumentoRouter);
 app.use('/reservas', reservaRouter);
+app.use('/guias', guiaRouter);
 
 module.exports = app;
