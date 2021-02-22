@@ -21,8 +21,8 @@ async function checkSignIn() {
             });
             if (info[0] != null) {
                 await swal("Sign In successful!", "");
-                sessionStorage.setItem("nome", info[0].nome);
-                sessionStorage.setItem("utilizadorID", info[0].utilizadorID);
+                sessionStorage.setItem("nome", info[0].Nome);
+                sessionStorage.setItem("utilizadorID", info[0].UtilizadorID);
                 window.location = "index.html";
             }
             else
