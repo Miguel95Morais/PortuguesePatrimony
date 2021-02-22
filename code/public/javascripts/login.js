@@ -6,9 +6,9 @@ async function checkSignIn() {
         Password: password
     }
     if (username.length == 0)
-        swal("Insert Username ", "");
+        alert("Insert Username ", "");
     else if (password.length == 0)
-        swal("Insert Password ", "");
+        alert("Insert Password ", "");
     else {
         try {
             let info = await $.ajax({
@@ -20,13 +20,13 @@ async function checkSignIn() {
 
             });
             if (info[0] != null) {
-                await swal("Sign In successful!", "");
+                await alert("Sign In successful!", "");
                 sessionStorage.setItem("nome", info[0].Nome);
                 sessionStorage.setItem("utilizadorID", info[0].UtilizadorID);
                 window.location = "index.html";
             }
             else
-                await swal("Username or password are wrong!", "");;
+                await alert("Username or password are wrong!", "");;
         } catch (err) {
 
             console.log(err);
@@ -40,11 +40,11 @@ async function addUtilizador() {
     let password = document.getElementById("newPassword").value;
     let nome = document.getElementById("nome").value;
     if (newUsername.length == 0)
-        swal("Insert username ", "");
+        alert("Insert username ", "");
     else if (password.length == 0)
-        swal("Insert password ", "");
+        alert("Insert password ", "");
     else if (nome.length == 0)
-        swal("Insert nome ", "");
+        alert("Insert nome ", "");
     else {
         let utilizador = {
             Username: username,
@@ -60,9 +60,9 @@ async function addUtilizador() {
                 contentType: "application/json"
             });
             if (result == null) {
-                swal("Username is being used, please try a new one!", "");
+                alert("Username is being used, please try a new one!", "");
             }
-            swal("Utilizador registered")
+            alert("Utilizador registered")
         } catch (err) {
             console.log(err);
         }
