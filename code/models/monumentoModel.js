@@ -45,15 +45,15 @@ module.exports.getAll = async function (filterObj) {
         console.log(err);
         return { status: 500, data: err };
     }
-}
+}*/
 
 module.exports.save = async function (monumento) {
     try {
-        let sql = "INSERT INTO monumento(nome, morada, latitude, longitude, descricao, monumento_guia_id) VALUES (?,?,?,?,?,?)";
-        let result = await pool.query(sql, [monumento.nome, monumento.morada, monumento.latitude, monumento.longitude, monumento.descricao, monumento.monumento_guia_id]);
+        let sql = "INSERT INTO monumento(nomemonumento, morada, latitude, longitude, descricao, monumento_guia_id) VALUES (?,?,?,?,?,?)";
+        let result = await pool.query(sql, [monumento.nomemonumento, monumento.morada, monumento.latitude, monumento.longitude, monumento.descricao, monumento.monumento_guia_id]);
         return { status: 200, data: result };
     } catch (err) {
         console.log(err);
         return { status: 500, data: err };
     }
-}*/
+}

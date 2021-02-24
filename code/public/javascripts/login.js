@@ -21,7 +21,7 @@ async function checkSignIn() {
             });
             if (info[0] != null) {
                 await alert("Sign In successful!", "");
-                sessionStorage.setItem("nome", info[0].nome);
+                sessionStorage.setItem("nome", info[0].nomeutilizador);
                 sessionStorage.setItem("user_id", info[0].user_id);
                 window.location = "index.html";
             }
@@ -38,18 +38,18 @@ async function checkSignIn() {
 async function addUtilizador() {
     let newUsername = document.getElementById("newUsername").value;
     let password = document.getElementById("newPassword").value;
-    let nome = document.getElementById("nome").value;
+    let nomeutilizador = document.getElementById("nome").value;
     if (newUsername.length == 0)
         alert("Insert username ", "");
     else if (password.length == 0)
         alert("Insert password ", "");
-    else if (nome.length == 0)
+    else if (nomeutilizador.length == 0)
         alert("Insert nome ", "");
     else {
         let utilizador = {
             Username: username,
             Password: password,
-            nome: nome,
+            nomeutilizador: nomeutilizador,
         }
         try {
             let result = await $.ajax({

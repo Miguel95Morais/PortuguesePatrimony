@@ -22,12 +22,12 @@ window.onload = async function () {
 async function addMonumento() {
     try {
         let monumento = {
-            nome: document.getElementById("nome").value,
+            nomemonumento: document.getElementById("nome").value,
             morada: document.getElementById("morada").value,
             latitude: document.getElementById("latitude").value,
             longitude: document.getElementById("longitude").value,
             descricao: document.getElementById("descricao").value,
-            guiaID: parseInt(document.getElementById("guia").value)
+            guia_id: parseInt(document.getElementById("guia").value)
         }
         alert(JSON.stringify(monumento));
         let result = await $.ajax({
