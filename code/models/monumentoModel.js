@@ -14,7 +14,7 @@ module.exports.getAll = async function (filterObj) {
             return { status: 200, data: monumentos };
         }
         let sql = "SELECT monumento_id, nomemonumento, morada, latitude, longitude, descricao, nomeguia FROM monumento, guia WHERE monumento_guia_id = guia_id" +
-            filterQueries + "ORDER BY `monumento`.`nomemonumento` ASC";
+            filterQueries + " ORDER BY `monumento`.`monumento_id`";
         let monumentos = await pool.query(sql, filterValues);
         return { status: 200, data: monumentos };
     } catch (err) {
@@ -22,17 +22,17 @@ module.exports.getAll = async function (filterObj) {
         return { status: 500, data: err };
     }
 }
-/*module.exports.getOne = async function (monumento_id) {
+module.exports.getOne = async function (monumento_id) {
     try {
-        let sql = "SELECT * FROM monumento, guia WHERE monumento.guia_id = guia.guia_id " +
+        let sql = "SELECT * FROM monumento, guia WHERE monumento_guia_id = guia_id " +
             " AND monumento_id = ?";
         let monumentos = await pool.query(sql, [monumento_id]);
         if (monumentos.length > 0) {
             let monumento = monumentos[0]; // its only one
 
-            sql = "SELECT reserva_id, reserva.nome AS nome, utilizador.nome AS utilizador " +
-                "FROM reserva,utilizador " +
-                "reserva.utilizador_id = utilizador_id AND monumento_id = ?";
+            sql = "SELECT reserva_id, nomereserva, nomeutilizador " +
+                "FROM reserva, utilizador " +
+                "reserva_user_id = user_id AND monumento_id = ?";
             let reservas = await pool.query(sql, [monumento_id]);
 
             monumento.reservas = reservas;
@@ -45,7 +45,7 @@ module.exports.getAll = async function (filterObj) {
         console.log(err);
         return { status: 500, data: err };
     }
-}*/
+}
 
 module.exports.save = async function (monumento) {
     try {

@@ -24,7 +24,7 @@ router.get('/filtered', async function(req, res, next) {
 
 /* GET one monumento */
 
-// /api/albuns/3
+// /api/monumentos/3
 router.get('/:id', async function (req, res, next) {
     let monumento_id = req.params.id;
     let result = await mntoModel.getOne(monumento_id);
@@ -33,7 +33,7 @@ router.get('/:id', async function (req, res, next) {
 });
 
 
-/* GET all albuns */
+/* Post all monumentos */
 router.post('/', async function (req, res, next) {
     let monumento = req.body;
     let result = await mntoModel.save(monumento);
