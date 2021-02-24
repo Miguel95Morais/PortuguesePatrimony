@@ -12,9 +12,9 @@ router.get('/SignInInfo/', async function (req, res, next) {
 
 
 
-router.post('/newUtilizador', async function (req, res, next) {
+router.post('/novoUtilizador', async function (req, res, next) {
     let utilizador = req.body;
-    let result = await utilizadorModel.newUtilizador(utilizador);
+    let result = await utilizadorModel.novoUtilizador(utilizador);
     res.status(result.status).
         send(result.data);
 });
