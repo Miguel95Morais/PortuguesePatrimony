@@ -4,18 +4,17 @@ module.exports.getAll = async function (filterObj) {
     try {
         let filterQueries = "";
         let filterValues = [];
-        if (filterObj.nome) {
+        if (filterObj.nomemonumento) {
             filterQueries += " AND Nome LIKE ?";
-            filterValues.push("%" + filterObj.nome + "%");
+            filterValues.push("%" + filterObj.nomemonumento + "%");
         }
-        if (filterObj.guia) {
-            filterQueries += " AND Nome LIKE ?";
-            filterValues.push("%" + filterObj.guia + "%");
+        if (filterObj.monumento_id != null) {
+            let sql = "SELECT monumento_id, nomemonumento, morada, latitude, longitude, descricao, nomeguia FROM monumento, guia WHERE monumento_guia_id = guia_id AND monumento_guia_id = ?";
+            let monumentos = await pool.query(sql, filterObj.monumento_id);
+            return { status: 200, data: monumentos };
         }
-        let sql = "SELECT * FROM monumento, guia WHERE monumento.guia_id = guia.guia_id" +
-            filterQueries;
-        console.log(sql);
-        console.log(filterValues);
+        let sql = "SELECT monumento_id, nomemonumento, morada, latitude, longitude, descricao, nomeguia FROM monumento, guia WHERE monumento_guia_id = guia_id" +
+            filterQueries + "ORDER BY `monumento`.`nomemonumento` ASC";
         let monumentos = await pool.query(sql, filterValues);
         return { status: 200, data: monumentos };
     } catch (err) {
@@ -23,7 +22,7 @@ module.exports.getAll = async function (filterObj) {
         return { status: 500, data: err };
     }
 }
-module.exports.getOne = async function (monumento_id) {
+/*module.exports.getOne = async function (monumento_id) {
     try {
         let sql = "SELECT * FROM monumento, guia WHERE monumento.guia_id = guia.guia_id " +
             " AND monumento_id = ?";
@@ -57,4 +56,4 @@ module.exports.save = async function (monumento) {
         console.log(err);
         return { status: 500, data: err };
     }
-}
+}*/

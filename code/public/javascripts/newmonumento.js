@@ -7,7 +7,7 @@ window.onload = async function () {
         });
         let html = "";
         for (let guia of guias) {
-            html += "<option value=" + guia.guia_id + ">" + guia.name +
+            html += "<option value=" + guia.guia_id + ">" + guia.nomeguia +
                 "</option>";
         }
         document.getElementById("guia").innerHTML = html;
@@ -41,5 +41,21 @@ async function addMonumento() {
     } catch (err) {
         console.log(err);
         // mensagem para o utilizador
+    }
+    async function filter() {
+        try {
+            let nomemonumento = document.getElementById("search").value;
+            let monumentos = await $.ajax({
+                url: "/api/monumentos?nomemonumento=" + nomemonumento,
+                method: "get",
+                dataType: "json"
+            });
+            loadMonumentos(monumentos);
+        } catch (err) {
+            let elemAside = document.getElementById("listaMonumentos");
+            console.log(err);
+            elemAside.innerHTML = "<h1> Page not found</h1>" +
+                "<h2> Try again later</h2>";
+        }
     }
 }

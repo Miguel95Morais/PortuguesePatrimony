@@ -1,8 +1,3 @@
-/*mapbox://styles/miguel1morais/cklix7dyn0dju17ru89qzu4ef
-pk.eyJ1IjoibWlndWVsMW1vcmFpcyIsImEiOiJja2xkMDFrazUxYWQ1MnZzODFtejEzZ2NkIn0.FeF6wxnuLddaxEzJBAqzdQ
-https://api/styles/v1/miguel1morais/cklix7dyn0dju17ru89qzu4ef/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibWlndWVsMW1vcmFpcyIsImEiOiJja2xkMDFrazUxYWQ1MnZzODFtejEzZ2NkIn0.FeF6wxnuLddaxEzJBAqzdQ
-© <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>*/
-
 var ppmap = L.map('map').setView([38.736946, -9.142685], 12);
 var pointersLayer = L.layerGroup();
 var rotasLayer = L.layerGroup();
@@ -54,6 +49,7 @@ function getDirections(lat, lon) {
 
     });
 }
+//Pointers Clickable
 function monumentosPointers(lat, long, nome, monumento_id) {
     var marker = pointersLayer.addLayer(L.marker([lat, long]).bindPopup("<input type='button' class='markerInput' onclick='selecionarPointerParque(" + monumento_id + ")' value='" + nome + "'>").addTo(ppmap));
 }
