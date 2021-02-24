@@ -22,7 +22,7 @@ module.exports.getAll = async function (filterObj) {
         return { status: 500, data: err };
     }
 }
-module.exports.getOne = async function (monumento_id) {
+/*module.exports.getOne = async function (monumento_id) {
     try {
         let sql = "SELECT * FROM monumento, guia WHERE monumento_guia_id = guia_id " +
             " AND monumento_id = ?";
@@ -45,7 +45,7 @@ module.exports.getOne = async function (monumento_id) {
         console.log(err);
         return { status: 500, data: err };
     }
-}
+}*/
 
 module.exports.save = async function (monumento) {
     try {

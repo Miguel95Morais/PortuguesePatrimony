@@ -18,5 +18,7 @@ router.post('/novoUtilizador', async function (req, res, next) {
     res.status(result.status).
         send(result.data);
 });
+/*sessionStorage.setItem("user_id", utilizador.user_id)
+window.location = "index.html"*/
 
 module.exports = router;

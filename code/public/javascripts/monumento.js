@@ -15,12 +15,12 @@ window.onload = async function () {
     }*/
 
 
-    document.getElementById("nome").innerHTML = monumento.nome;
-    document.getElementById("guia").innerHTML = monumento.nome;
+    document.getElementById("nome").innerHTML = monumento.nomemonumento;
+    document.getElementById("guia").innerHTML = monumento.nomeguia;
 
     let html = "";
     for (let reserva of monumento.reservas) {
-        html += "<p>" + reserva.nome + " </p>";
+        html += "<p>" + reserva.nomereserva + "</p>";
     }
     document.getElementById("reservas").innerHTML = html;
 }

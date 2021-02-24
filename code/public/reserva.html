@@ -9,15 +9,22 @@
 </head>
 
 <body>
-  <header id="nome"> </header>
+  <header> Reservar Monumento </header>
   <main>
-    <!--<img id="image">-->
-    <h2>Guia: <span id="guia"> </span></h2>
-    <h2>Reserva:</h2>
-    <section id="reservas">
-    </section>
-  </main>
 
+    <h2>Nome: <input type="text" id="reserva"></h2>
+    <h2>Utilizador: <select id="utilizador"></select></h2>
+    <h2>Monumento: <select id="monumento"></select></h2>
+    <h2><input type="button" value="Adicionar" onclick="addReserva()"></h2>
+  </main>
+  <aside>
+    <!--<img id="image">-->
+    <h2>Utilizador: <span id="utilizador"> </span></h2>
+    <section id="utilizadores"></section>
+    <h2>Monumento:</h2>
+    <section id="monumentos">
+    </section>
+  </aside>
 </body>
 
 </html>

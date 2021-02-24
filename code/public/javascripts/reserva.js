@@ -1,11 +1,11 @@
-window.onload = function () {
+/*window.onload = function () {
     showReserva();
 }
 
 async function loadReservas() {
     try {
         let reservas = await $.ajax({
-            url: "/api/reservas/reservasUtilizador/" + sessionStorage.getItem("userID"),
+            url: "/api/reservas/reservasUtilizador/" + sessionStorage.getItem("user_id"),
             method: "get",
             dataType: "json",
         });
@@ -22,30 +22,24 @@ async function showReserva() {
         htmlAtuais += "<p>" + reserva.nome + "</p>";
         elemAtuais.innerHTML = htmlAtuais;
 
-    }
-    async function addReserva() {
-        let monumento_id = sessionStorage.getItem("monumento_id");
-        let user_id = sessionStorage.getItem("user_id");
+    }*/
+async function addReserva() {
+    try {
         let reserva = {
-            nome: document.getElementById("data").value,
-            monumento_id: monumento_id,
-            user_id: user_id
+            nomereserva: document.getElementById("reserva").value,
+            user_id: parseInt(document.getElementById("utilizador").value),
+            monumento_id: parseInt(document.getElementById("monumento").value)
         }
-        try {
-            let novareserva = await $.ajax({
-                url: "/api/reservas/novareserva",
-                method: "post",
-                dataType: "json",
-                data: JSON.stringify(reserva),
-                contentType: "application/json"
-            });
-            if (novareserva == null) {
-                alert("Unexpected error, please try again!", "");
-            }
-            alert("Reserva efetuada")
-        } catch (err) {
-            console.log(err);
-            // mensagem para o utilizador
-        }
+        alert(JSON.stringify(reserva));
+        let result = await $.ajax({
+            url: "/api/reservas",
+            method: "post",
+            dataType: "json",
+            data: JSON.stringify(reserva),
+            contentType: "application/json"
+        });
+        alert(JSON.stringify(result));
+    } catch (err) {
+        console.log(err);
     }
 }
