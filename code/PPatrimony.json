@@ -1,0 +1,104 @@
+{
+    "vehicles": [
+        {
+            "vehicle_id": "my_vehicle",
+            "start_address": {
+                "location_id": "lisboa",
+                "lon": -9.178,
+                "lat": 38.7489
+            }
+        }
+    ],
+    "services": [
+        {
+            "id": "basilicadaestrela",
+            "name": "Basílica da Estrela",
+            "address": {
+                "location_id": "basilicadaestrela",
+                "lon": -9.160,
+                "lat": 38.713
+            }
+        },
+        {
+            "id": "igrejadesantoestevao",
+            "name": "Igreja de Santo Estevão",
+            "address": {
+                "location_id": "igrejadesantoestevao",
+                "lon": -9.127,
+                "lat": 38.712
+            }
+        },
+        {
+            "id": "castelodesaojorge",
+            "name": "Castelo de São Jorge",
+            "address": {
+                "location_id": "castelodesaojorge",
+                "lon": -9.133,
+                "lat": 38.713
+            }
+        },
+        {
+            "id": "elevadordagloria",
+            "name": "Elevador da Glória",
+            "address": {
+                "location_id": "elevadordagloria",
+                "lon": -9.142,
+                "lat": 38.716
+            }
+        },
+        {
+            "id": "torredebelem",
+            "name": "Torre de Belém",
+            "address": {
+                "location_id": "torredebelem",
+                "lon": -9.216,
+                "lat": 38.691
+            }
+        },
+        {
+            "id": "mosteirodosjeronimos",
+            "name": "Mosteiro dos Jerónimos",
+            "address": {
+                "location_id": "mosteirodosjeronimos",
+                "lon": -9.206,
+                "lat": 38.697
+            }
+        },
+        {
+            "id": "palaciodesaobento",
+            "name": "Palácio de São Bento",
+            "address": {
+                "location_id": "palaciodesaobento",
+                "lon": -9.153,
+                "lat": 38.712
+            }
+        },
+        {
+            "id": "igrejadesantaengracia",
+            "name": "Igreja de Santa Engrácia ou Panteão Nacional",
+            "address": {
+                "location_id": "igrejadesantaengracia",
+                "lon": -9.124,
+                "lat": 38.714
+            }
+        },
+        {
+            "id": "teatronacionaldesaocarlos",
+            "name": "Teatro Nacional de São Carlos",
+            "address": {
+                "location_id": "teatronacionaldesaocarlos",
+                "lon": -9.141,
+                "lat": 38.709
+            }
+        },
+        {
+            "id": "jardimbotanico",
+            "name": "Jardim Botânico",
+            "address": {
+                "location_id": "jardimbotanico",
+                "lon": -9.149,
+                "lat": 38.718
+            }
+        }
+    ]
+}
