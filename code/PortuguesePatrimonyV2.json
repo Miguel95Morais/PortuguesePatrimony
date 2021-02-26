@@ -1,0 +1,205 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "id": 1,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -9.16059776444483,
+                    38.713165133858
+                ]
+            },
+            "properties": {
+                "OBJECTID": 1,
+                "COD_SIG": "1700603001001",
+                "IDTIPO": "2",
+                "INF_NOME": "Basílica da Estrela, compreendendo os túmulos de D. Maria I e do seu confessor",
+                "INF_MORADA": "Praça da Estrela, 12",
+                "INF_DESCRICAO": "Classificada como Monumento Nacional é, também conhecida por Basílica do Sagrado Coração de Jesus. Mandada erguer por D. Maria I, como cumprimento de um voto que fizera pelo nascimento de D. José, a obra foi iniciada em 1779 e concluída em 1789. Com projecto da autoria dos arq. Mateus Vicente e Reinaldo dos Santos foi concebida numa linguagem tardo-barroca, numa época em que vigorava o estilo neoclássico, sendo a estatuária atribuída à oficina de Machado de Castro. No exterior destaca-se a fachada imponente composta por um corpo central, de 2 pisos, ladeado por 2 torres sineiras, e o zimbório que permite desfrutar uma magnífica vista sobre Lisboa. O interior, em mármore, apresenta nave única dividida em 3 tramos rematados por capelas laterais e capela-mor, onde se encontra o túmulo da fundadora.\n",
+                "GlobalID": "1483d812-784e-4869-99a7-c5a9c2b1fe7f"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 2,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -9.12784749156793,
+                    38.712212468206
+                ]
+            },
+            "properties": {
+                "OBJECTID": 2,
+                "COD_SIG": "3601103001001",
+                "IDTIPO": "2",
+                "INF_NOME": "Igreja de Santo Estêvão",
+                "INF_MORADA": "Largo de Santo Estêvão, Igreja",
+                "INF_DESCRICAO": "Com origem num templo do séc. XII,foi totalmente reconstruida entre 1733-1740,segundo o risco de Manuel da Costa Negreiros e mais tarde sob orientação de Mateus Vicente de Oliveira.Monumento Nacional e característica do barroco,a sua planta oitavada assenta numa geometria simples de traçado rectangular com os ângulos cortados,conferindo-lhe uma notável originalidade.A sua fachada surge dividida em 3 corpos por pilastras salientes,estando o central rematado por frontão triangular,encimado por cruz e enquadrado por 2 torres.Esta simetria perdeu-se com o Terramoto,que destruiu uma das torres sineiras.No interior destacam-se:o altar-mor com o retábulo de pedra e o grupo escultórico de talha realizado por José de Almeida;os altares laterais;a estatuária;e os azulejos da sacristia velha.",
+                "GlobalID": "b875379b-61f1-4486-adea-977eb107affc"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 3,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -9.1331573299061,
+                    38.7139544921022
+                ]
+            },
+            "properties": {
+                "OBJECTID": 3,
+                "COD_SIG": "1200101008001",
+                "IDTIPO": "2",
+                "INF_NOME": "Castelo de São Jorge e restos das Cercas de Lisboa",
+                "INF_MORADA": "Castelo de São Jorge, Torres do Castelejo",
+                "INF_DESCRICAO": "A colina onde se ergue o Castelo de S. Jorge foi das primeiras áreas ocupadas de Lisboa.Durante a Idade do Ferro e o período romano desempenhou um papel estratégico na defesa do povoado.Ocupado pelos árabes,foi conquistado em 1147 por D. Afonso Henriques.A construção do Paço Real durante a Primeira Dinastia conferiu-lhe uma centralidade política,religiosa,social e cultural,até ao reinado de D. Manuel I,que mandou construir o Paço da Ribeira.Bastante afectado pelo terramoto de 1755,nele se instalou,em 1780,a Casa Pia da Correcção da Corte,cujos edifícios foram,depois das invasões francesas (1807-1810) reparados e ocupados pelos quartéis.Restaurado no final dos anos 30,no âmbito da Exposição do Mundo Português,foi objecto de levantamento de grande parte dos muros e de muitas das torres,o que lhe conferiu um 'carácter medieval',resultante desta intervenção monumental.Em 1994,o Pelouro da Reabilitação Urbana da CML lançou um novo programa de valorização e revitalização deste espaço - o Projecto Integrado do Castelo -,o qual previu um conjunto de acções ao nível arquitectónico,económico,social e cultural.Classificado como Monumento Nacional,destacam-se:o Castelejo em forma poligonal;a Cidadela,parcialmente muralhada;a Casa do Governador;a Sala Ogival do Paço da Alcáçova,hoje convertida no elegante e requintado Restaurante do Leão;a Olissipónia,centro de interpretação da cidade;a Torre de Ulisses/Periscópio;a Torre de São Lourenço,a mais saliente do Castelejo,contígua à desaparecida Porta de S. Lourenço,que terá sido,em tempos,uma frente avançada da cerca moura;o núcleo museológico do Castelo de São Jorge inaugurado em 2008;e o Núcleo Arqueológico do Castelo de São Jorge inaugurado em 2010.Esta classificação inclui também os restos das Cercas Moura e Fernandina,que protegiam defensivamente a cidade.",
+                "GlobalID": "8e6208f0-c0bc-4182-87fa-6fdeddab0b90"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 4,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -9.14293834033151,
+                    38.716162571023
+                ]
+            },
+            "properties": {
+                "OBJECTID": 4,
+                "COD_SIG": "4501302021001",
+                "IDTIPO": "2",
+                "INF_NOME": "Ascensor da Glória e meio urbano que o envolve",
+                "INF_MORADA": "Calçada da Gloria (todos os imóvéis que com ela confinam); Rua das Taipas, tornejando para o Largo da Oliveirinha, 1, 2 e 5; e a Travessa do Fala-Só, 2 a 12 e 1 a 7",
+                "INF_DESCRICAO": "Fazendo a ligação entre a Avenida da Liberdade/Restauradores e a Rua de São Pedro de Alcântara é, atualmente, o ascensor mais movimentado da cidade, transportando cerca de três milhões de passageiros por ano. Construído pela Companhia dos Ascensores Mecânicos de Lisboa, segundo projeto de Mesnier du Ponsard, e inaugurado em 1885, foi, entre os elevadores de Lisboa, o pioneiro da tração elétrica, instalada em 1914. Inicialmente, locomovido por contrapeso de água, recorreu, mais tarde, ao vapor, enquanto que as viagens noturnas eram iluminadas por velas de estearina. Constituído por dois carros, ligados por um cabo subterrâneo, que sobem e descem alternada e simultaneamente ao longo de duas vias de carris de ferro, foi o único que proporcionou aos utentes lugares no tejadilho - a chamada \"Imperial\" - onde se acedia por uma escada de caracol. Em 1926 tornou-se propriedade da Carris. O conjunto designado por \"Ascensor da Glória e o meio urbano que o envolve\" está classificado como Monumento Nacional.",
+                "GlobalID": "b2b5a9c3-18f4-4cbc-9c75-e64aa6f0217c"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 5,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -9.21592911528113,
+                    38.6915905936771
+                ]
+            },
+            "properties": {
+                "OBJECTID": 5,
+                "COD_SIG": "3202222002001",
+                "IDTIPO": "2",
+                "INF_NOME": "Torre de Belém",
+                "INF_MORADA": "Avenida de Brasília, Torre de Belém",
+                "INF_DESCRICAO": "Monumento Nacional e Património Mundial da UNESCO é um belo exemplar da arquitectura militar em Portugal.Construída em honra do santo patrono de Lisboa,S. Vicente,no local onde estava ancorada a Grande Nau,que cruzava fogo com a fortaleza de S. Sebastião,veio assim perpetuar,em pedra,essa estrutura de madeira.Francisco de Arruda foi o arquitecto da obra,desenvolvida entre 1514 e 1520,possivelmente sob orientação de Boitaca.Esta curiosa composição de cantaria,articula um baluarte poligonal com uma torre quadrangular de tradição medieval,ornamentados segundo a gramática decorativa do manuelino,conjugada com elementos naturalistas.A função militar é reservada ao baluarte propriamente dito,que avança sobre o rio em 3 pisos (andar subterrâneo,nave e terraço).A torre está reservada a outras funções,como as de carácter administrativo (Sala do Governador e Sala das Audiências),palatino (Sala dos Reis) e cultual (capela no último piso).Destacam-se os traços exóticos,expressos nas cúpulas gomadas de gosto orientalizante que cobrem as guaritas do baluarte e na representação zoomórfica de um rinoceronte esculpido na face norte.",
+                "GlobalID": "f6f0ea7c-1b8a-4e7f-857c-1f5bbb8cbda7"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 6,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -9.20648329593263,
+                    38.6978249396007
+                ]
+            },
+            "properties": {
+                "OBJECTID": 6,
+                "COD_SIG": "3200614036001",
+                "IDTIPO": "2",
+                "INF_NOME": "Mosteiro dos Jerónimos",
+                "INF_MORADA": "Praça do Império",
+                "INF_DESCRICAO": "A edificação do Mosteiro da Ordem de São Jerónimo, fundado, em 1496, por iniciativa de D. Manuel I, com o objetivo de torná-lo Panteão Real, teve início, com a obra da igreja dedicada a Santa Maria de Belém, em 1502, sob a orientação de Diogo de Boitaca, seguindo-se João de Castilho, a partir de 1517, entre outros nomes que colaboraram na sua construção em datas posteriores. O conjunto construído ao longo do séc. XVI foi objeto de profundas obras de restauro no século XIX, subsistindo a igreja, as dependências da sacristia, sala do capítulo, claustro e refeitório, no piso térreo, e a antiga livraria, no piso superior. Esta obra fundamental da arquitetura religiosa manuelina (igreja, claustro, sacristia, refeitório), traduz, também, uma arquitetura religiosa maneirista (capela-mor e forro do transepto), revivalista (remate da torre, antigo dormitório, sala do capítulo) e modernista (ala E do anexo e Biblioteca da Marinha), encontrando-se classificada como Monumento Nacional e inscrita, desde 1983, na lista do Património da Humanidade da UNESCO. A igreja, de planta longitudinal em cruz latina, traduz uma igreja-salão desenvolvida em três naves com a mesma altura, cobertas por abóboda única, rebaixada, polinervada, assente em pilares oitavados, transepto de topos retilíneos e cabeceira saliente retangular. Adossado ao corpo da igreja surge um claustro de planta quadrangular, com octógono inscrito, desenvolvido em dois pisos de arcadas maineladas e galerias abobadadas com polinervuras, decorado com elementos de temática cristológica e heráldica régia. No interior merecem, ainda, destaque: a capela-mor maneirista traçada pelo mestre Jerónimo de Ruão, em 1571; a sala do capítulo terminada no séc. XIX; e a tumulária. No exterior é de referir todo o trabalho escultórico e decorativo associado ao portal principal executado por Nicolau Chanterenne, em 1517, e ao portal Sul, lateral e fronteiro ao rio, da autoria de João de Castilho, entre 1516 e 1518. Este complexo arquitetónico acolhe, ainda, o Museu da Marinha e o Museu Nacional de Arqueologia.",
+                "GlobalID": "2eb6c0ab-f233-4333-a809-8a0981b7f90c"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 7,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -9.15392756505112,
+                    38.7126067362624
+                ]
+            },
+            "properties": {
+                "OBJECTID": 7,
+                "COD_SIG": "1702901080001",
+                "IDTIPO": "2",
+                "INF_NOME": "Palácio de São Bento",
+                "INF_MORADA": "Praça da Constituição de 1976",
+                "INF_DESCRICAO": "Antigo convento Beneditino de São Bento da Saúde, fundado pelo geral da Ordem dos Beneditinos, D. Baltazar de Braga. A obra, iniciada em 1598 e concluída em 1615, teve projeto do arquiteto Baltazar Alvares, que adotou uma linguagem estética maneirista.\nCom a extinção e expulsão das ordens religiosas em 1833, o convento foi convertido em Palácio das Cortes (Parlamento), função que ainda hoje mantém com o nome de Assembleia da República. Para assumir estas funções, que incluem duas câmaras, a dos pares e a dos deputados, o edifício sofreu sucessivas campanhas de obras a partir de 1835, retomadas em 1895 devido a um incêndio de grandes proporções. Esta nova empreitada prolongou-se desde o final do século XIX até 1943, pontuando-se os últimos 20 anos por uma intervenção estética mais de acordo com o nacionalismo do Estado Novo.\nO palácio deve a sua feição atual ao projeto neoclassicizante do arquiteto Ventura Terra.\nNa linguagem arquitetónica utilizada a alegoria à nação e aos seus grandes homens é uma constante.\nDa fachada de aparato, precedida por uma grandiosa escadaria, destaca-se o monumental frontão esculpido que representa uma entronização da Pátria. O acesso realiza-se por um átrio grandioso, local da antiga igreja beneditina do convento, passando-se depois para a monumental escadaria nobre, concluída no período do Estado Novo (1936/37) e onde se podem observar conjuntos escultóricos coroando as portas e pinturas históricas, de louvor à  Pátria (A defesa da Pátria e a Prosperidade da Nação), no topo da escadaria.\nO Salão Nobre é outro dos pontos importantes deste monumento. Concluído no período do Estado Novo, era o local das receções oficiais nos anos 1940. Aqui impera a estética nacionalista, na profusão de elementos heráldicos e nas pinturas na parede, evocativas da época dos Descobrimentos. Esta mesma estética, da solenidade nacional, impera também na Sala das Sessões. Inaugurada em 1903, é obra do arquiteto Ventura Terra que, influenciado pela arquitetura do ferro e do vidro, concebeu uma claraboia de grandes dimensões para iluminar o espaço. São ainda de assinalar nesta sala as estátuas alegóricas relacionadas com o exercício da legislatura (Diplomacia, Jurisprudência, Justiça e Eloquência) e uma pintura evocativa da primeira Assembleia Constituinte Portuguesa, ocorrida em 1821, da qual resultou a primeira constituição. A sala das Sessões encontra-se disposta em hemiciclo, observando-se a disposição política à francesa (esquerda e direita).\nDe destacar ainda o antigo refeitório dos frades, onde existem conjuntos de painéis azulejares do século XVIII (2ª metade), a biblioteca, fundada por Passos Manuel e criada para se assemelhar a uma biblioteca conventual. O Palácio alberga a Assembleia da República, a Biblioteca Passos Manuel e o Arquivo histórico Parlamentar.\n\n",
+                "GlobalID": "b631edcc-fdf7-4843-9c43-f59691ba8456"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 8,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -9.12468480103197,
+                    38.7149771227065
+                ]
+            },
+            "properties": {
+                "OBJECTID": 8,
+                "COD_SIG": "5100906001001",
+                "IDTIPO": "2",
+                "INF_NOME": "Igreja de Santa Engrácia (Panteão Nacional)",
+                "INF_MORADA": "Largo Dr. Bernardino António Gomes (Pai), Igreja de Santa Engrácia; Campo de Santa Clara, Igreja de Santa Engrácia",
+                "INF_DESCRICAO": "Monumento Nacional e obra prima da arquitectura barroca,de influência italiana,do arq. João Antunes,foi construída sobre o templo primitivo,datado de 1568,que ruíu em 1681.As obras da actual igreja tiveram início no último quartel  do séc. XVII (1684),sendo abandonadas em 1712.Obras essas,concluídas somente em meados do séc. XX,com a construção da cúpula.Desde então alberga o Panteão Nacional,encontrando-se em 2 torreões distintos os túmulos dos Presidentes da República e de artistas célebres.De planta octogonal,centralizada por uma cruz grega,de topos arredondados,inscrita num quadrado formado por 4 torreões-bloco,apresenta a sua fachada principal rasgada por um portal enquadrado por colunas salomónicas de capitéis compósitos e remate de baixo-relevo com a padroeira.",
+                "GlobalID": "b70efb3b-0a2e-4467-ad09-df118bf1ed38"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 9,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -9.1417338935716,
+                    38.7093395454938
+                ]
+            },
+            "properties": {
+                "OBJECTID": 9,
+                "COD_SIG": "2000108003001",
+                "IDTIPO": "2",
+                "INF_NOME": "Teatro Nacional de São Carlos",
+                "INF_MORADA": "Rua Serpa Pinto, 9",
+                "INF_DESCRICAO": "Teatro lírico construído no séc. XVIII, segundo projeto do arq. José da Costa e Silva, foi inaugurado em 1793. Objeto de diversas intervenções ao longo da sua existência, encontra-se classificado como Monumento Nacional. De características neoclássicas e inspiração seiscentista e italiana, nomeadamente no Teatro di San Carlo de Nápoles e no Teatro alla Scala de Milão, foi concebido como teatro de corte para a burguesia e como primeiro teatro público, aberto a todo o cidadão que pagasse ingresso. De planta longitudinal, apresenta uma fachada sóbria, dividida em 3 corpos e desenvolvida em 2 pisos sobrepostos sobre mezanino e um 3º piso sobre o corpo central. Este corpo central, rasgado por um pórtico, apresenta ao nível térreo uma loggia composta de 3 arcos frontais e um lateral, em volta perfeita, surgindo coroado por um terraço perfeito de balaustrada em cantaria, ostentando colunas da ordem dórica adossadas ao mesmo e exibindo, no 3º piso, um relógio envolvido por grinaldas e duas janelas, encimado por dois pináculos e um brasão. No interior, o neoclássico confunde-se com algumas remanescências barroquizantes da decoração. São de destacar a sala de espetáculos, de planta elíptica com 5 ordens de camarotes, italianizantes, o salão nobre, assim como as pinturas atribuídas a Wolkmar Machado no teto do vestíbulo e no pano da boca de cena, a Manuel da Costa no teto do salão e a Giovanni Appianni no camarote real.",
+                "GlobalID": "83e890a2-856b-4489-8b17-648077390dd7"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 10,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -9.14907942393805,
+                    38.7183381283021
+                ]
+            },
+            "properties": {
+                "OBJECTID": 10,
+                "COD_SIG": "4600702050",
+                "IDTIPO": "5",
+                "INF_NOME": "Jardim Botânico - Faculdade de Ciências",
+                "INF_MORADA": "Rua da Escola Politécnica, 52-58; Rua da Alegria",
+                "INF_DESCRICAO": "O Jardim Botânico da Universidade de Lisboa, classificado como Monumento Nacional, é um jardim científico, projectado em meados do século XIX. Começado a plantar em 1873, por iniciativa dos professores Conde de Ficalho e Andrade Corvo, acabou por ser inaugurado em 1878, contando com cerca de 2500 táxones cultivados. Com cerca de 5 ha foi implantado na antiga cerca do Colégio, entre 1858 e 1875, para dar apoio aos alunos de Botânica e Princípios de Agricultura, sendo na actualidade uma das mais importantes reservas das espécies vegetais de Portugal, onde os exemplares estão catalogados com placas identificativas. É o sucessor do Jardim Botânico da Ajuda do qual recebeu muitos exemplares, cujas principais colecções são palmeiras e cicadáceas. Rodeia os edifícios do Museu Nacional de História Natural e do Museu da Ciência.Vista panorâmica sobre a cidade. Museu e Laboratório Botânico, Zoológico, Antropológico e Mineralógico instalado em edifício classicizante, inaugurado no local onde existiu o Jesuítico Colégio Real dos Nobres. Um incêndio destruiu o seu interior e as preciosas colecções. Conta igualmente, com esculturas ao ar livre, exposições sobre Ilustração Botânica e Gravuras\" para adquirir.",
+                "GlobalID": "b5c78e96-1955-4a7a-b11c-c0894c3e20dc"
+            }
+        }
+    ]
+}
