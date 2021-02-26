@@ -1,13 +1,16 @@
 var ppmap = L.map('map').setView([38.736946, -9.142685], 12);
-var pointersLayer = L.layerGroup();
-var rotasLayer = L.layerGroup();
-ppmap.addLayer(pointersLayer);
+var markersLayer = L.layerGroup();
+var routingLayer = L.layerGroup();
+ppmap.addLayer(markersLayer);
 
 
-L.tileLayer('https://api/styles/v1/miguel1morais/cklix7dyn0dju17ru89qzu4ef/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibWlndWVsMW1vcmFpcyIsImEiOiJja2xkMDFrazUxYWQ1MnZzODFtejEzZ2NkIn0.FeF6wxnuLddaxEzJBAqzdQ', {
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 17,
+    id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
-    attribution: '© <a href="https://apps.mapbox.com/feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    accessToken: 'pk.eyJ1IjoibWlndWVsMW1vcmFpcyIsImEiOiJja2xjcGM1ZWgwOWZwMnZuMTN3MHlyMjk0In0.luEp_3TMRckUq2ehls9Aew'
 }).addTo(ppmap);
 
 //Leaflet Geosearch
@@ -18,19 +21,19 @@ geoProcura.on('results', function (data) {
     results.clearLayers();
 });
 
-var ghRouting = new GraphHopper.Routing({ key: "97ae6028-3ed3-469c-9db3-4e41207ac6be", host: "https://graphhopper.com/api/1/", vehicle: "car", locale: "en" });;
+var ghRouting = new GraphHopper.Routing({ key: "97ae6028-3ed3-469c-9db3-4e41207ac6be", host: "https://graphhopper.com/api/1/", vehicle: "car", elevation: "false" });;
 
-var pointerRota;
+var markerRota;
 
 function getDirections(lat, lon) {
     ppmap.on('click', function (e) {
-        if (ghRouting.points.length > 1) { ghRouting.clearPoints(); rotasLayer.clearLayers(); ppmap.removeLayer(pointerRota); }
+        if (ghRouting.points.length > 1) { ghRouting.clearPoints(); routingLayer.clearLayers(); ppmap.removeLayer(markerRota); }
         ghRouting.addPoint(new GHInput(e.latlng.lat, e.latlng.lng));
         ghRouting.addPoint(new GHInput(lat, lon));
-        pointerRota = L.marker([e.latlng.lat, e.latlng.lng]).addTo(ppmap);
+        markerRota = L.marker([e.latlng.lat, e.latlng.lng]).addTo(ppmap);
 
-        rotasLayer = L.geoJson().addTo(ppmap);
-        rotasLayer.options = {
+        routingLayer = L.geoJson().addTo(ppmap);
+        routingLayer.options = {
             style: { color: "#00cc33", "weight": 5, "opacity": 0.7 }
         };
         ghRouting.doRequest()
@@ -49,27 +52,27 @@ function getDirections(lat, lon) {
 
     });
 }
-//Pointers Clickable
-function monumentosPointers(lat, long, nome, monumento_id) {
-    var marker = pointersLayer.addLayer(L.marker([lat, long]).bindPopup("<input type='button' class='markerInput' onclick='selecionarPointerParque(" + monumento_id + ")' value='" + nome + "'>").addTo(ppmap));
+//Functionalities
+function monumentosMarkers(lat, long, nomemonumento, monumento_id) {
+    var marker = markersLayer.addLayer(L.marker([lat, long]).bindPopup("<input type='button' class='markerInput' onclick='selecionarMarkerMonumento(" + monumento_id + ")' value='" + nomemonumento + "'>").addTo(ppmap));
 }
 
-function monumentosPointersInfo(lat, long) {
-    var marker = pointersLayer.addLayer(L.marker([lat, long]).addTo(ppmap));
+function monumentosMarkersInfo(lat, long) {
+    var marker = markersLayer.addLayer(L.marker([lat, long]).addTo(ppmap));
 }
 
-function selecionarPointerMonumento(monumento_id) {
+function selecionarMarkerMonumento(monumento_id) {
     sessionStorage.setItem("monumento_id", monumento_id);
     window.location = "map.html";
 }
 
-function getMonumentoNome(nomeMonumento) {
-    sessionStorage.setItem("nomeMonumento", nomeMonumento);
+function getMonumentoNome(nomemonumento) {
+    sessionStorage.setItem("nomemonumento", nomemonumento);
     getRota();
 }
 
 function clearMarker() {
-    pointersLayer.clearLayers();
+    markersLayer.clearLayers();
 }
 
 

@@ -18,6 +18,18 @@ window.onload = async function () {
 
 }
 
+/*async function showMonumento() {
+    try {
+        let monumentos = await $.ajax({
+            url: "/api/monumentos",
+            method: "get",
+            dataType: "json"
+        });
+        return monumentos;
+    } catch (err) {
+        console.log(err);
+    }
+}*/
 
 async function addMonumento() {
     try {
@@ -42,7 +54,7 @@ async function addMonumento() {
         console.log(err);
         // mensagem para o utilizador
     }
-    async function filter() {
+    /*async function filter() {
         try {
             let nomemonumento = document.getElementById("search").value;
             let monumentos = await $.ajax({
@@ -57,5 +69,5 @@ async function addMonumento() {
             elemAside.innerHTML = "<h1> Page not found</h1>" +
                 "<h2> Try again later</h2>";
         }
-    }
+    }*/
 }

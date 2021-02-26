@@ -4,23 +4,35 @@
     <title>Portuguese Patrimony - Map</title>
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-    <script src="./javascripts/mapa.js"></script>
-    <script src="./javascripts/newmonumento.js"></script>
+    <!-- Load Leaflet from CDN-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet-src.js"></script>
+    <!-- Load Esri Leaflet from CDN -->
+    <script src="https://unpkg.com/esri-leaflet"></script>
+    <script src="https://unpkg.com/esri-leaflet@2.5.3/dist/esri-leaflet.js"
+        integrity="sha512-K0Vddb4QdnVOAuPJBHkgrua+/A9Moyv8AQEWi0xndQ+fqbRfAFd47z4A9u1AW/spLO0gEaiE1z98PK1gl5mC5Q=="
+        crossorigin=""></script>
+    <!-- Esri Leaflet Geocoder -->
+    <link rel="stylesheet" href="https://unpkg.com/esri-leaflet-geocoder/dist/esri-leaflet-geocoder.css" />
+    <script src="https://unpkg.com/esri-leaflet-geocoder"></script>
+    <!--GraphHopper-->
+    <script src="https://cdn.jsdelivr.net/npm/graphhopper-js-api-client/dist/graphhopper-client.js"></script>
+    <!--Leaflet Routing Machine-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
 
-    <!--<style>
+    <style>
         #map {
-            /*width: 900px;*/
+            width: 900px;
             width: 100%;
-            height: 500px;
+            height: 700px;
         }
-    </style>-->
+    </style>
 </head>
 
 <body>
 
-    Insert filter functionality
+    <!--Insert filter functionality-->
     <section id="map"></section>
 
     <!--<script>
@@ -48,6 +60,8 @@
             L.geoJson(data).addTo(map);
         });    
     </script>-->
+    <script src="./javascripts/mapa.js"></script>
+    <script src="./javascripts/newmonumento.js"></script>
 </body>
 
 </html>
